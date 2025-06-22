@@ -10,7 +10,7 @@ from langchain_core.output_parsers import JsonOutputParser
 
 # Initialize FastAPI app
 app = FastAPI(title="GenAI Chatbot Service")
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "Your OpenAI API Key Here"
 # Initialize the LLM and JSON output parser
 llm = ChatOpenAI(model_name="gpt-4.1", temperature=0.5)
 json_parser = JsonOutputParser()

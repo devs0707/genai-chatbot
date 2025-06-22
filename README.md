@@ -23,7 +23,7 @@ A stateful chatbot service built with FastAPI and LangChain. It handles multi-tu
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/devs0707/genai-chatbot
+   git clone https://github.com/devs0707/genai-chatbot.git
    cd genai-chatbot
    ```
 
