@@ -1,0 +1,13 @@
+# 1. Build the image
+docker build -t genai-chatbot:latest .
+
+# 2. Run locally to verify
+docker run --rm -p 8080:80 genai-chatbot:latest
+
+# 3. Test your endpoints
+#   Chat:    curl -XPOST http://localhost:8080/chat -d '{"session_id":"1","message":"Hi"}' -H 'Content-Type: application/json'
+#   Health:  curl http://localhost:8080/healthz
+
+# 4. (Optional) Tag & push to a registry
+docker tag genai-chatbot:latest devDocker/genai-chatbot:1.0
+docker push devDocker/genai-chatbot:1.0
